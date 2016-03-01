@@ -1,0 +1,36 @@
+<!--
+    Urheber dieser Datei ist Sebastian Badur. Die beiliegende Lizenz muss gewahrt bleiben.
+-->
+
+<idea-plugin version="2">
+    <id>com.github.sebadur.TouchScroll</id>
+    <name>Touch Scroll</name>
+    <version>1.0</version>
+    <vendor email="sebadur@users.noreply.github.com" url="http://www.github.com/sebadur/TouchScroll">GitHub Repositorium</vendor>
+
+    <description><![CDATA[
+        <h1>TouchScroll</h1> for the IntelliJ IDE
+        Adds the option to scroll with touch screen finger dragging for the whole IDE, simply. This is thought to be most
+        useful for viewing source files comfortably.<br>
+        First select the corresponding entry in context menu to activate this plugin. You may disable it every time the
+        same way.<br>
+        Tap once for inserting text. Drag to scroll. Do multiple taps for different selection types.<br>
+        <br>
+        <i>This is an early version - please report bugs and respond your personal user experience.</i>
+    ]]></description>
+
+    <change-notes><![CDATA[
+        <em>Firstly implemented.</em>
+    ]]></change-notes>
+
+    <idea-version since-build="93.94"/>
+
+    <actions>
+        <action id="com.github.sebadur.TouchScroll.Aktion" class="com.github.sebadur.TouchScroll.Aktion"
+                text="Toggle Touch Scroll"
+                description="Toggle touch scroll in editor view to simply scroll files with dragging motion.">
+            <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+        </action>
+    </actions>
+
+</idea-plugin>
